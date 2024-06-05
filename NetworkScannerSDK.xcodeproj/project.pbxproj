@@ -11,6 +11,9 @@
 		64DB2D8E2C1071F900D154B0 /* NetworkScannerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64DB2D832C1071F900D154B0 /* NetworkScannerSDK.framework */; };
 		64DB2D932C1071F900D154B0 /* NetworkScannerSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DB2D922C1071F900D154B0 /* NetworkScannerSDKTests.swift */; };
 		64DB2D942C1071F900D154B0 /* NetworkScannerSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 64DB2D862C1071F900D154B0 /* NetworkScannerSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64DB2D9E2C10725E00D154B0 /* NetworkScannerSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DB2D9D2C10725E00D154B0 /* NetworkScannerSDK.swift */; };
+		64DB2DA02C10727200D154B0 /* NetworkUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DB2D9F2C10727200D154B0 /* NetworkUtils.swift */; };
+		F346E63258802743D65E2F17 /* Pods_NetworkScannerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77B9D4BB0A8C1264A08EE9C4 /* Pods_NetworkScannerSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,11 @@
 		64DB2D872C1071F900D154B0 /* NetworkScannerSDK.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = NetworkScannerSDK.docc; sourceTree = "<group>"; };
 		64DB2D8D2C1071F900D154B0 /* NetworkScannerSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkScannerSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64DB2D922C1071F900D154B0 /* NetworkScannerSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkScannerSDKTests.swift; sourceTree = "<group>"; };
+		64DB2D9D2C10725E00D154B0 /* NetworkScannerSDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkScannerSDK.swift; sourceTree = "<group>"; };
+		64DB2D9F2C10727200D154B0 /* NetworkUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtils.swift; sourceTree = "<group>"; };
+		77B9D4BB0A8C1264A08EE9C4 /* Pods_NetworkScannerSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkScannerSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7805234EFCDA6C57458E5F43 /* Pods-NetworkScannerSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkScannerSDK.release.xcconfig"; path = "Target Support Files/Pods-NetworkScannerSDK/Pods-NetworkScannerSDK.release.xcconfig"; sourceTree = "<group>"; };
+		A13F51F2284DC885BEC2BB5D /* Pods-NetworkScannerSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkScannerSDK.debug.xcconfig"; path = "Target Support Files/Pods-NetworkScannerSDK/Pods-NetworkScannerSDK.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F346E63258802743D65E2F17 /* Pods_NetworkScannerSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,12 +59,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B2CA031EF0358A39F20FB8A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A13F51F2284DC885BEC2BB5D /* Pods-NetworkScannerSDK.debug.xcconfig */,
+				7805234EFCDA6C57458E5F43 /* Pods-NetworkScannerSDK.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		241B400D576623A8B02162A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77B9D4BB0A8C1264A08EE9C4 /* Pods_NetworkScannerSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		64DB2D792C1071F900D154B0 = {
 			isa = PBXGroup;
 			children = (
 				64DB2D852C1071F900D154B0 /* NetworkScannerSDK */,
 				64DB2D912C1071F900D154B0 /* NetworkScannerSDKTests */,
 				64DB2D842C1071F900D154B0 /* Products */,
+				1B2CA031EF0358A39F20FB8A /* Pods */,
+				241B400D576623A8B02162A1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +102,8 @@
 			children = (
 				64DB2D862C1071F900D154B0 /* NetworkScannerSDK.h */,
 				64DB2D872C1071F900D154B0 /* NetworkScannerSDK.docc */,
+				64DB2D9D2C10725E00D154B0 /* NetworkScannerSDK.swift */,
+				64DB2D9F2C10727200D154B0 /* NetworkUtils.swift */,
 			);
 			path = NetworkScannerSDK;
 			sourceTree = "<group>";
@@ -103,6 +134,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 64DB2D972C1071F900D154B0 /* Build configuration list for PBXNativeTarget "NetworkScannerSDK" */;
 			buildPhases = (
+				92CFB1D1B381633661E92EEB /* [CP] Check Pods Manifest.lock */,
 				64DB2D7E2C1071F900D154B0 /* Headers */,
 				64DB2D7F2C1071F900D154B0 /* Sources */,
 				64DB2D802C1071F900D154B0 /* Frameworks */,
@@ -189,11 +221,38 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		92CFB1D1B381633661E92EEB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NetworkScannerSDK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		64DB2D7F2C1071F900D154B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64DB2D9E2C10725E00D154B0 /* NetworkScannerSDK.swift in Sources */,
+				64DB2DA02C10727200D154B0 /* NetworkUtils.swift in Sources */,
 				64DB2D882C1071F900D154B0 /* NetworkScannerSDK.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +403,7 @@
 		};
 		64DB2D982C1071F900D154B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A13F51F2284DC885BEC2BB5D /* Pods-NetworkScannerSDK.debug.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -377,6 +437,7 @@
 		};
 		64DB2D992C1071F900D154B0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7805234EFCDA6C57458E5F43 /* Pods-NetworkScannerSDK.release.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -411,6 +472,7 @@
 		64DB2D9B2C1071F900D154B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W2CT3M99U7;
@@ -427,6 +489,7 @@
 		64DB2D9C2C1071F900D154B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W2CT3M99U7;

@@ -1,0 +1,16 @@
+PODS:
+  - MMLanScan (3.0.0)
+
+DEPENDENCIES:
+  - MMLanScan
+
+SPEC REPOS:
+  trunk:
+    - MMLanScan
+
+SPEC CHECKSUMS:
+  MMLanScan: 86a0f77edbf163be30c1f58321469c7c8ce4c50e
+
+PODFILE CHECKSUM: a8edf34cc3ecf2ed676f2c748c06fc5c86b70565
+
+COCOAPODS: 1.15.2
