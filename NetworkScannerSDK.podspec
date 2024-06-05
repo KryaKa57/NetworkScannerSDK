@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "NetworkScannerSDK"
-  spec.version      = "1.0.2"
+  spec.version      = "1.0.3"
   spec.summary      = "A network scanning SDK for iOS."
 
   # This description is used to generate tags and improve search results.
@@ -39,8 +39,8 @@ DESC
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "MIT (example)"
-  # spec.license      = { :type => 'MIT', :file => 'LICENSE.txt' }
+  # spec.license      = "MIT (example)"
+  spec.license      = { :type => 'MIT', :file => 'LICENSE.txt' }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -81,7 +81,7 @@ DESC
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/KryaKa57/NetworkScannerSDK.git", :tag => "1.0.2" }
+  spec.source       = { :git => "https://github.com/KryaKa57/NetworkScannerSDK.git", :tag => "1.0.3" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
