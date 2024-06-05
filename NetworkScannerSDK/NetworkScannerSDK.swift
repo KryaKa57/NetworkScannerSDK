@@ -1,15 +1,8 @@
-//
-//  NetworkScannerSDK.swift
-//  NetworkScannerSDK
-//
-//  Created by Alisher on 05.06.2024.
-//
-
 import Foundation
-import SwiftUI
 import Combine
 import MMLanScan
 
+@available(iOS 12.0, *)
 public class NetworkScannerSDK: NSObject, ObservableObject, MMLANScannerDelegate {
     @Published public private(set) var devices: [String: MMDevice] = [:]
     private var lanScanner: MMLANScanner!
@@ -27,7 +20,7 @@ public class NetworkScannerSDK: NSObject, ObservableObject, MMLANScannerDelegate
 
     public func getDevices() -> [MMDevice] {
         return Array(devices.values).map { device in
-            let modifiedDevice = device
+            var modifiedDevice = device
             modifiedDevice.isLocalDevice = (device.ipAddress == self.localIPAddress)
             return modifiedDevice
         }
