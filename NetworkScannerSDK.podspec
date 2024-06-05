@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "NetworkScannerSDK"
-  spec.version      = "1.0.1"
+  spec.version      = "1.0.2"
   spec.summary      = "A network scanning SDK for iOS."
 
   # This description is used to generate tags and improve search results.
@@ -81,7 +81,7 @@ DESC
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/KryaKa57/NetworkScannerSDK.git", :tag => "1.0.1" }
+  spec.source       = { :git => "https://github.com/KryaKa57/NetworkScannerSDK.git", :tag => "1.0.2" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
